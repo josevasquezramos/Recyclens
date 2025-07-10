@@ -1,10 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".ui.home.HomeFragment">
+
+    <!-- Logo de la empresa -->
+    <ImageView
+        android:id="@+id/logo_recyclens"
+        android:layout_width="107dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="Logo Recyclens"
+        android:scaleType="fitStart"
+        android:src="@drawable/isologotipo_base"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Título principal -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title_residuos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:letterSpacing="0.1"
+        android:text="RESIDUOS DE PAPEL"
+        android:textColor="@color/home_color_scrollable"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_recyclens" />
+
+    <!-- HorizontalScrollView para las tarjetas -->
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_residuos"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="40dp"
+            android:paddingEnd="20dp">
+
+            <!-- Tarjeta 1 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp">
+
+                <FrameLayout
+                    android:id="@+id/card1_image"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/logo_scrollable_first"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/card1_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="2dp"
+                    android:paddingHorizontal="20dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/card1_image"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Tarjeta 2 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp">
+
+                <FrameLayout
+                    android:id="@+id/card2_image"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/logo_scrollable_second"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/card2_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="2dp"
+                    android:paddingHorizontal="20dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/card2_image"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Tarjeta 3 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/card3_image"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/logo_scrollable_third"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/card3_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="2dp"
+                    android:paddingHorizontal="20dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/card3_image"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/container_page_indicators"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_scroll"
+        android:layout_margin="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Indicadores de página -->
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/page_indicators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            app:singleSelection="true"
+            app:selectionRequired="true">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/IndicatorButton"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginEnd="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/IndicatorButton"
+                android:backgroundTint="@color/material_on_surface_stroke"
+                android:layout_marginEnd="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/IndicatorButton"
+                android:backgroundTint="@color/material_on_surface_stroke"/>
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    </LinearLayout>
+
+
+    <!-- Botón Comencemos -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_page_indicators"
+        android:gravity="center|top">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_comencemos"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="¡Comencemos!"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:backgroundTint="@color/colorPrimary"
+            app:cornerRadius="25dp"
+            app:elevation="4dp"
+            />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/text_home"
@@ -19,4 +227,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
