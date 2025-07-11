@@ -28,9 +28,9 @@ class ProfileFragment : Fragment() {
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textProfile
+        val userNameTextView: TextView = binding.userNameText // Accede al TextView del nombre de usuario
         profileViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+            userNameTextView.text = it // Asigna el texto del ViewModel al nombre de usuario
         }
         return root
     }
