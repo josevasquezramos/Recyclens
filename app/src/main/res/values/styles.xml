@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="IndicatorButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- Estilo para el navbar personalizado -->
+    <style name="CustomBottomNavigation">
+        <item name="android:background">@color/nav_background</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <!-- Estilo para los items del navbar -->
+    <style name="NavItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <!-- Estilo para los iconos del navbar -->
+    <style name="NavIcon">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:tint">@color/nav_icon_inactive</item>
+    </style>
+
+    <!-- Estilo para el texto del navbar -->
+    <style name="NavText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textColor">@color/nav_text_inactive</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <!-- Estilo para el FAB de la cámara -->
+    <style name="CameraFab">
+        <item name="backgroundTint">@color/camera_fab_background</item>
+        <item name="tint">@android:color/white</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+    </style>
+
+</resources>

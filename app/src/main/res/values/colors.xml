@@ -7,6 +7,33 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="camera">#C0CA33</color>
 
     <color name="bounding_box_color">#234567</color>
+    <color name="home_color_scrollable">#235752</color>
+
+    <color name="colorPrimary">#4DB6AC</color>
+    <color name="colorPrimaryDark">#00695C</color>
+    <color name="colorAccent">#4DB6AC</color>
+
+    <!-- Custom colors -->
+    <color name="teal_accent">#4DB6AC</color>
+    <color name="dark_gray">#424242</color>
+    <color name="icon_gray">#757575</color>
+    <color name="hint_gray">#9E9E9E</color>
+    <color name="input_background">#F5F5F5</color>
+    <color name="gradient_start">#EDE7F6</color>
+    <color name="gradient_end">#C7B5E3</color>
+    <color name="top_curve_start">#7DB5A6</color>
+    <color name="top_curve_end">#6B9B8D</color>
+
+    <!-- Colores para el navbar -->
+    <color name="nav_icon_color">@color/nav_icon_inactive</color>
+    <color name="nav_text_color">@color/nav_text_inactive</color>
+    <color name="camera_fab_background">#212121</color>
+    <color name="nav_background">#2B2B2B</color>
+    <color name="nav_icon_inactive">#C0CA33</color>
+    <color name="nav_icon_active">#C7B5E3</color>
+    <color name="nav_text_inactive">#FFFFFF</color>
+    <color name="nav_text_active">#FFFFFF</color>
 </resources>

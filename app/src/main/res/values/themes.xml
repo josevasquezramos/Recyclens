@@ -13,4 +13,35 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/gradient_start</item>
+        <item name="android:statusBarColor">@color/top_curve_start</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="LoginInputStyle" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="boxBackgroundColor">@color/input_background</item>
+        <item name="boxCornerRadiusTopStart">25dp</item>
+        <item name="boxCornerRadiusTopEnd">25dp</item>
+        <item name="boxCornerRadiusBottomStart">25dp</item>
+        <item name="boxCornerRadiusBottomEnd">25dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxStrokeColor">@color/teal_accent</item>
+    </style>
+
+    <style name="LoginButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:paddingHorizontal">24dp</item>
+        <item name="backgroundTint">@color/teal_accent</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
 </resources>
